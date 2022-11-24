@@ -1,6 +1,8 @@
 function contarPalabras(mystr){
     if (mystr != "")
     return 2;
+    else
+    return "empty"
 }
 
 function contarApariciones(str, word){

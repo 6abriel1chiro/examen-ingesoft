@@ -3,6 +3,9 @@ describe("contar palabras", () => {
   it("deberia devolver cuantas palabras tiene mi string", () => {
     expect(contarPalabras("hello world")).toEqual(2);
   });
+  it("deberia devolver empty si esta vacio", () => {
+    expect(contarPalabras("")).toEqual("empty");
+  });
 });
 
 describe("ver apariciones de una palabra", () => {
@@ -23,7 +26,7 @@ describe("ver reporte ompleto de un string", () => {
   });
 
   it("deberia devolver el reporte de cuantas veces ocurre cada palabra", () => {
-    expect(generarReportePalabras("The brown dog jumped over the lazy dog when the brown fox was sleeping")).toEqual("{}");
+    expect(generarReportePalabras("The brown dog jumped over the lazy dog when the brown fox was sleeping")).toEqual("{\"The\":1,\"brown\":2,\"dog\":2,\"jumped\":1,\"over\":1,\"the\":2,\"lazy\":1,\"when\":1,\"fox\":1,\"was\":1,\"sleeping\":1}");
   });
 
 
