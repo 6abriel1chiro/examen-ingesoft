@@ -1,4 +1,4 @@
-### ejercicio 2
+#### fin examen
 #### Para instalar las dependencias:
 
 npm install
