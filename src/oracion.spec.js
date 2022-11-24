@@ -22,6 +22,10 @@ describe("ver reporte ompleto de un string", () => {
     expect(generarReportePalabras("El password de mi cuenta es PASSWORD. Es un password de poco cuidado")).toEqual("El:1" + "password:3" + "de:2" + "mi:1" + "cuenta:1" + "es:2" + "un:1" + "poco:1" + "cuidado:1" );
   });
 
+  it("deberia devolver  [no se puede generar reporte] si la cadena es vacia", () => {
+    expect(generarReportePalabras("")).toEqual("no se puede generar reporte" );
+  });
+
 
 
 });
