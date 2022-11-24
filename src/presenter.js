@@ -10,6 +10,11 @@ form.addEventListener("submit", (event) => {
 
   const publicacion = text.value;
 
-  div.innerHTML = "<p>" + publicacion + "</p>";
+  if (publicacion === " "){
+    error.innerHTML = "<p>" + "no se puede ingresar un post sin texto" + "</p>";
 
+  }
+  else{
+  div.innerHTML = "<p>" + publicacion + "</p>";
+}
 });
