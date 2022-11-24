@@ -12,8 +12,22 @@ return count;
 }
 
 function generarReportePalabras(str){
+
 if(str != "" && str != " "){
-return "El:1" + "password:3" + "de:2" + "mi:1" + "cuenta:1" + "es:2" + "un:1" + "poco:1" + "cuidado:1";}
+    const result = {};
+  
+    const arr = str.split(' ');
+        for(let word of arr) {
+      if(result[word]) {
+        result[word]++;
+      } else {
+        result[word] = 1;
+      }
+    }
+    const myJSON = JSON.stringify(result);
+
+    return myJSON;
+}
 else{
 return "no se puede generar reporte"
 }

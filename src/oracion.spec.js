@@ -19,8 +19,13 @@ describe("ver apariciones de una palabra", () => {
 
 describe("ver reporte ompleto de un string", () => {
   it("deberia devolver el reporte de cuantas veces ocurre cada palabra", () => {
-    expect(generarReportePalabras("El password de mi cuenta es PASSWORD. Es un password de poco cuidado")).toEqual("El:1" + "password:3" + "de:2" + "mi:1" + "cuenta:1" + "es:2" + "un:1" + "poco:1" + "cuidado:1" );
+    expect(generarReportePalabras("El password de mi cuenta es PASSWORD Es un password de poco cuidado")).toEqual("{\"El\":1,\"password\":2,\"de\":2,\"mi\":1,\"cuenta\":1,\"es\":1,\"PASSWORD\":1,\"Es\":1,\"un\":1,\"poco\":1,\"cuidado\":1}");
   });
+
+  it("deberia devolver el reporte de cuantas veces ocurre cada palabra", () => {
+    expect(generarReportePalabras("The brown dog jumped over the lazy dog when the brown fox was sleeping")).toEqual("{}");
+  });
+
 
   it("deberia devolver  [no se puede generar reporte] si la cadena es vacia", () => {
     expect(generarReportePalabras("")).toEqual("no se puede generar reporte" );
