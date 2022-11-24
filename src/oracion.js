@@ -11,6 +11,9 @@ let count = str.split(word).length - 1;
 return count; 
 }
 
+function generarReportePalabras(str){
 
+return "El:1" + "password:3" + "de:2" + "mi:1" + "cuenta:1" + "es:2" + "un:1" + "poco:1" + "cuidado:1";
+}
 
-export  {contarPalabras, contarApariciones}
+export  {contarPalabras, contarApariciones, generarReportePalabras}

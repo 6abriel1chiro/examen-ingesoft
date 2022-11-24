@@ -1,4 +1,4 @@
-import {contarPalabras, contarApariciones} from "./oracion"
+import {contarPalabras, contarApariciones, generarReportePalabras} from "./oracion"
 describe("contar palabras", () => {
   it("deberia devolver cuantas palabras tiene mi string", () => {
     expect(contarPalabras("hello world")).toEqual(2);
