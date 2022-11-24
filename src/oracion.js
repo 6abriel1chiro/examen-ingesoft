@@ -4,7 +4,8 @@ function contarPalabras(mystr){
 }
 
 function contarApariciones(str, word){
-
+str =  str.toLowerCase();
+word = word.toLowerCase();
 let count = str.split(word).length - 1;
 
 return count; 
