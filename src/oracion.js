@@ -3,4 +3,11 @@ function contarPalabras(mystr){
     return 2;
 }
 
-export default contarPalabras
+function contarApariciones(str, word){
+
+let count = str.split(word).length - 1;
+
+return count; 
+}
+
+export  {contarPalabras, contarApariciones}
