@@ -1,4 +1,5 @@
 function contarPalabras(mystr){
+    if (mystr != "")
     return 2;
 }
 
