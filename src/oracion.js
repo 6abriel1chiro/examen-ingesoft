@@ -11,4 +11,6 @@ let count = str.split(word).length - 1;
 return count; 
 }
 
+
+
 export  {contarPalabras, contarApariciones}
